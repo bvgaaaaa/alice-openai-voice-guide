@@ -219,7 +219,7 @@ def handler_alice(event, context):
         "input": [{"role": "user", "content": question}],
         "reasoning": {"effort": "none"},
         "max_output_tokens": 220 if search else 120,
-        "background": search,
+        "background": True,
         "store": True,
     }
     if search:
